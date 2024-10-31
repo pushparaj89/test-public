@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16.4
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: raiqa-health
+    ports:
+      - 5433:5433
