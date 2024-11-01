@@ -112,6 +112,7 @@ const env = {
             process.env.STRIPE_SECRET_KEY && process.env.STRIPE_WEBHOOK_SECRET
           ),
     deleteTeam: process.env.FEATURE_TEAM_DELETION !== 'false',
+    chat: process.env.NEXT_PUBLIC_TEAM_FEATURE_CHAT === 'true',
   },
 
   recaptcha: {

@@ -2,6 +2,7 @@ import { compare, hash } from 'bcryptjs';
 
 import env from './env';
 import type { AUTH_PROVIDER } from 'types';
+import { withAuth } from "next-auth/middleware";
 
 export async function hashPassword(password: string) {
   return await hash(password, 12);
